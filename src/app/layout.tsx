@@ -3,6 +3,7 @@ import { Inter, Playfair_Display, Geist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import FloatingCTA from "@/components/sections/FloatingCTA";
+import SplashScreen from "@/components/ui/SplashScreen";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${playfair.variable} antialiased bg-baba-bg text-baba-light min-h-screen flex flex-col`}
       >
+        <SplashScreen />
         {children}
         <FloatingCTA />
       </body>
