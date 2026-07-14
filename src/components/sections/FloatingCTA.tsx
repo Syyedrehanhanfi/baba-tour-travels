@@ -33,7 +33,7 @@ export default function FloatingCTA() {
         variants={fabVariants}
         initial="hidden"
         animate="visible"
-        transition={{ type: "spring", stiffness: 200, damping: 15, delay: 0.7 }}
+        transition={{ type: "spring" as const, stiffness: 200, damping: 15, delay: 0.7 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_4px_20px_rgba(37,211,102,0.3)]"
@@ -48,7 +48,7 @@ export default function FloatingCTA() {
         variants={fabVariants}
         initial="hidden"
         animate="visible"
-        transition={{ type: "spring", stiffness: 200, damping: 15, delay: 0.5 }}
+        transition={{ type: "spring" as const, stiffness: 200, damping: 15, delay: 0.5 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="flex h-14 w-14 items-center justify-center rounded-full bg-baba-light text-[#0b0e13] shadow-[0_4px_20px_rgba(0,0,0,0.3)]"

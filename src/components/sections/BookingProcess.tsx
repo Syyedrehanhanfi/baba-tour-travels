@@ -70,7 +70,7 @@ export default function BookingProcess() {
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     viewport={{ margin: "-40% 0px -40% 0px" }}
-                    transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                    transition={{ type: "spring" as const, stiffness: 200, damping: 20 }}
                     className="absolute inset-0 rounded-full bg-baba-light shadow-[0_0_6px_rgba(247,247,247,0.6)]"
                   />
                 </div>
