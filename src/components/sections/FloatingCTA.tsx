@@ -3,15 +3,10 @@
 import { motion, Variants } from "framer-motion";
 import { Phone } from "lucide-react";
 
-const fabVariants = {
+const fabVariants: Variants = {
   hidden: { opacity: 0, scale: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    y: 0,
-    transition: { type: "spring" as const, stiffness: 200, damping: 15 },
-  },
-} satisfies Variants;
+  visible: { opacity: 1, scale: 1, y: 0 },
+};
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
   <svg 
