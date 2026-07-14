@@ -3,7 +3,7 @@
 import { motion, Variants } from "framer-motion";
 import { Phone } from "lucide-react";
 
-const fabVariants: Variants = {
+const fabVariants: any = {
   hidden: { opacity: 0, scale: 0, y: 20 },
   visible: {
     opacity: 1,
