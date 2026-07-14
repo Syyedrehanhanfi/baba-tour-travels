@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-baba-bg: #0b0e13;
+  --color-baba-surface: #0e1116;
+  --color-baba-card: #101318;
+  --color-baba-border: #22252a;
+  --color-baba-light: #f7f7f7;
+  --color-baba-muted: rgba(247, 247, 247, 0.6);
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-playfair);
+  
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: #0b0e13;
+  --foreground: #f7f7f7;
+  --card: #101318;
+  --card-foreground: #f7f7f7;
+  --popover: #101318;
+  --popover-foreground: #f7f7f7;
+  --primary: #f7f7f7;
+  --primary-foreground: #0b0e13;
+  --secondary: #22252a;
+  --secondary-foreground: #f7f7f7;
+  --muted: #0e1116;
+  --muted-foreground: rgba(247, 247, 247, 0.6);
+  --accent: #22252a;
+  --accent-foreground: #f7f7f7;
+  --destructive: #ef4444;
+  --destructive-foreground: #f7f7f7;
+  --border: #22252a;
+  --input: #22252a;
+  --ring: #f7f7f7;
+}
+
+.dark {
+  --background: #0b0e13;
+  --foreground: #f7f7f7;
+  --card: #101318;
+  --card-foreground: #f7f7f7;
+  --popover: #101318;
+  --popover-foreground: #f7f7f7;
+  --primary: #f7f7f7;
+  --primary-foreground: #0b0e13;
+  --secondary: #22252a;
+  --secondary-foreground: #f7f7f7;
+  --muted: #0e1116;
+  --muted-foreground: rgba(247, 247, 247, 0.6);
+  --accent: #22252a;
+  --accent-foreground: #f7f7f7;
+  --destructive: #ef4444;
+  --destructive-foreground: #f7f7f7;
+  --border: #22252a;
+  --input: #22252a;
+  --ring: #f7f7f7;
+}
+
+/* ─── Selection ─────────────────────────────────────────────────────── */
+
+::selection {
+  background: rgba(247, 247, 247, 0.12);
+  color: #f7f7f7;
+}
+
+::-moz-selection {
+  background: rgba(247, 247, 247, 0.12);
+  color: #f7f7f7;
+}
+
+/* ─── Scrollbar ─────────────────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22252a;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #33363b;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #22252a #0b0e13;
+}
+
+/* ─── Base ──────────────────────────────────────────────────────────── */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+/* ─── Utilities ─────────────────────────────────────────────────────── */
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Frosted-glass panel */
+  .glass {
+    @apply bg-baba-surface/80 backdrop-blur-md border border-white/5;
+  }
+
+  /* Consistent vertical rhythm for full-width sections */
+  .section-padding {
+    @apply py-32 md:py-40 lg:py-48;
+  }
+
+  /* Section label — uppercase tracked micro-text */
+  .section-header {
+    @apply uppercase tracking-[0.25em] text-xs text-baba-light/50 mb-6;
+  }
+
+  /* Hairline luxury border */
+  .luxury-border {
+    @apply border border-white/[0.06];
+  }
+
+  /* Premium text gradient — white to muted gray */
+  .text-gradient {
+    background: linear-gradient(
+      to right,
+      #f7f7f7 0%,
+      rgba(247, 247, 247, 0.7) 50%,
+      #f7f7f7 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
