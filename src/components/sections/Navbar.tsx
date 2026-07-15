@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "Fleet", href: "/#fleet" },
     { name: "Packages", href: "/#packages" },
     { name: "Destinations", href: "/#destinations" },
+    { name: "Awards", href: "/#awards" },
     { name: "Contact", href: "/#contact" },
   ];
 
