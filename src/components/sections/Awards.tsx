@@ -22,7 +22,7 @@ const AWARDS = [
     badgeIcon: <Trophy className="w-3 h-3" />,
     description:
       "Recognized at the prestigious Shubh Weddings Awards for delivering exceptional luxury transportation services, professional chauffeurs, and an outstanding customer experience across Udaipur.",
-    image: "/img/award-excellence.png",
+    image: "/awards/WhatsApp Image 2026-07-14 at 10.34.25 PM.jpeg",
     accentColor: "from-[#D4AF37]/20 via-[#D4AF37]/5 to-transparent",
     borderColor: "rgba(212,175,55,0.2)",
     glowColor: "rgba(212,175,55,0.12)",
@@ -35,7 +35,7 @@ const AWARDS = [
     badgeIcon: <BookOpen className="w-3 h-3" />,
     description:
       "Baba Tours & Travels was featured in Shubh Weddings Magazine as one of Udaipur's leading premium car rental companies, highlighting our luxury fleet, trusted reputation, and years of excellence.",
-    image: "/img/award-magazine.png",
+    image: "/awards/WhatsApp Image 2026-07-14 at 10.34.24 PM (1).jpeg",
     accentColor: "from-[#C0C0C0]/20 via-[#C0C0C0]/5 to-transparent",
     borderColor: "rgba(192,192,192,0.2)",
     glowColor: "rgba(192,192,192,0.10)",
@@ -48,7 +48,7 @@ const AWARDS = [
     badgeIcon: <Shield className="w-3 h-3" />,
     description:
       "For over two decades, Baba Tours & Travels has earned the trust of tourists, wedding planners, corporate clients, government organizations, and VIP guests through reliable service and a world-class luxury fleet.",
-    image: "/img/award-trust.png",
+    image: "/awards/WhatsApp Image 2026-07-14 at 10.34.24 PM (2).jpeg",
     accentColor: "from-[#D4AF37]/20 via-[#D4AF37]/5 to-transparent",
     borderColor: "rgba(212,175,55,0.2)",
     glowColor: "rgba(212,175,55,0.12)",
