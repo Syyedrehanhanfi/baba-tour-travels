@@ -6,6 +6,7 @@ import Packages from "@/components/sections/Packages";
 import Destinations from "@/components/sections/Destinations";
 import Testimonials from "@/components/sections/Testimonials";
 import InstagramGallery from "@/components/sections/InstagramGallery";
+import Awards from "@/components/sections/Awards";
 import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/sections/Footer";
@@ -21,6 +22,7 @@ export default function Home() {
         <Packages />
         <Destinations />
         <Testimonials />
+        <Awards />
         <InstagramGallery />
         <FAQ />
         <Contact />
